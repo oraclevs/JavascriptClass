@@ -229,28 +229,31 @@ console.log((guysAge + ChidubemAge) * 10);
 // challange  
 
 // test one 
-let Johnheight = 92
-let Johnweight = 1.95
+let Johnheight = 1.95;
+let Johnweight =  92
 let MarksWeight = 78
 let Marksheight = 1.69
 
-let johnBMI = (Johnweight / Johnheight) ** 2;
-let MarkBMI = (MarksWeight / Marksheight) ** 2;
+let johnBMI = Math.floor(Johnweight / Johnheight ** 2);
+let MarkBMI = Math.floor(MarksWeight / Marksheight ** 2);
 console.log(johnBMI, MarkBMI);
 let CompareJohnMark = johnBMI > MarkBMI
 console.log(CompareJohnMark);
 
 // test 2
-let Johnheights = 85;
-let Johnweights = 1.76;
+let Johnheights = 1.76;
+let Johnweights =  85;
 let MarksWeights = 95;
 let Marksheights = 1.88;
 
-let johnBMIs = (Johnweights / Johnheights) ** 2;
-let MarkBMIs = (MarksWeights / Marksheights) ** 2;
+let johnBMIs = Johnweights / Johnheights ** 2;
+let MarkBMIs = MarksWeights / Marksheights ** 2;
 console.log(johnBMIs, MarkBMIs);
 let CompareJohnMarks = johnBMIs > MarkBMIs;
 console.log(CompareJohnMarks);
 
 
 // done
+
+
+
