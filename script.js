@@ -228,7 +228,7 @@ console.log((guysAge + ChidubemAge) * 10);
 
 // challange  
 
-
+// test one 
 let Johnheight = 92
 let Johnweight = 1.95
 let MarksWeight = 78
@@ -251,3 +251,6 @@ let MarkBMIs = (MarksWeights / Marksheights) ** 2;
 console.log(johnBMIs, MarkBMIs);
 let CompareJohnMarks = johnBMIs > MarkBMIs;
 console.log(CompareJohnMarks);
+
+
+// done
