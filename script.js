@@ -234,8 +234,8 @@ let Johnweight =  92
 let MarksWeight = 78
 let Marksheight = 1.69
 
-let johnBMI = Math.floor(Johnweight / Johnheight ** 2);
-let MarkBMI = Math.floor(MarksWeight / Marksheight ** 2);
+let johnBMI = Johnweight / Johnheight ** 2;
+let MarkBMI = MarksWeight / Marksheight ** 2;
 console.log(johnBMI, MarkBMI);
 let CompareJohnMark = johnBMI > MarkBMI
 console.log(CompareJohnMark);
