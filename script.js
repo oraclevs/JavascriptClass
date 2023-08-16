@@ -13,7 +13,7 @@ let $Charles = "Rice"
 console.log(Charles4, _Charles, $Charles);
 
 
-// **************************  Data Types  ************************
+// **************************  8 Data Types  ************************
 /*
 1. string
 2. number
@@ -72,11 +72,182 @@ console.log(Money, typeof Money);
 console.log(null === undefined);
 
 
-// git init
-// git commit 
+/* ******************** diffrencies between const let and var ******************/
+
+/*
+*  The let Keyword
+The let Keyword was Intoduced in ES6 (2015)
+    *** Rules***
+   1. let cannot be Redeclared
+   2. let must be Declared before use 
+   3. let has a block scope
+*/
+
+
+// 1. let cannot be redeclared
+let subject = 'mathematics';
+// let subject = "English"
+
+
+// var can be redeclared 
+var friut = 'orange';
+var friut = "apple"
+console.log(friut);
+
+//  2. let must be Declared before use
+// console.log(myvariable);
+// let myvariable = 10
+
+let mynumber = 10
+console.log(mynumber);
+
+/* Hositing -> you can use the variable before it is Declared 
+-------- let and Const are not Hosisted.
+*/
+sayHiToMe = "Hi Oracle"
+var sayHiToMe;
+console.log(sayHiToMe);
+sayHiToMe = console.log("Hi Oracle");
+var sayHiToMe;
+
+
+// 3. let has a block scope
+
+{
+    let job = 5;
+    console.log(job);
+}
+// console.log(job);
+
+
+// ---------------- var does not hav block scope ----------------
+{
+    var animal = "lion";
+}
+console.log(animal);
+
+/*  ---------------------  var Redeclaring a variable inside a block will also 
+redeclare it the variable outside the block -------------------------------------*/
+var MacBook = 10
+{
+    var MacBook = 200
+}
+console.log(MacBook);
+
+/*  ---------------------  let  Redeclaring a variable inside a block will not 
+redeclare it the variable outside the block -------------------------------------*/
+let windows = 5;
+{
+    let windows = 6000;
+}
+console.log(windows);
 
 
 
 
+/*
+*  The const Keyword
+The let Keyword was Intoduced in ES6 (2015)
+    *** Rules***
+   1. const cannot be Reassigned
+   2.  const cannot be Redeclared
+   3. const has a block scope
+*/
+
+// 1. const cannot be Reassigned
+const costFromtempsiteToKodex = 200
+//  costFromtempsiteToKodex = 100;
+// console.log(costFromtempsiteToKodex);
+
+//  2.  const cannot be Redeclared
+// const yes = 'no'
+// const yes = 'yes'
 
 
+
+// ******************************** Basic Operators ********************************
+
+// Maths operators
+// minus
+const now = 2023
+const _oracle = now - 1999
+const $oracle = now - 1990
+console.log(_oracle, $oracle);
+
+// multiplication division and raise to power
+console.log(_oracle * 2, $oracle / 2, $oracle ** 3);
+
+
+
+/*
+* create 2 variables
+* The DataType Must be a string
+* concatinate (ADD) the Two variables
+* Add the two variables
+*/
+let nameOne = 'charles'
+let nameTwo = "johnSmith"
+let FullNameall = nameOne + " " + nameTwo;
+console.log(FullNameall);
+
+
+// ------------------------------ Assignment Operators (=) ------------------------------
+let NumberOne = 10 + 5;
+NumberOne += 5  //    let NumberOne =  NumberOne + 5
+console.log(NumberOne);
+   
+let Numbertwo = 2 + 5
+Numbertwo *= 7
+console.log(Numbertwo);
+
+let numberThree = 1
+numberThree++;
+console.log(numberThree);
+
+
+ let numberFour = 4
+numberFour--;
+console.log(numberFour);
+
+// ------------------------------ comparison operators ( >, <, >=,<=,==,=== ) ------------------------------
+let obinnaAge, charlesAge;
+obinnaAge = '35'
+charlesAge = 29
+console.log(obinnaAge == charlesAge);
+console.log(obinnaAge > charlesAge);
+
+
+// ------------------------------ Operator Percedence  (BODMAS) ----------------
+const yearNow = 2023
+const guysAge = yearNow - 1983;
+const ChidubemAge = yearNow - 1990
+console.log((guysAge + ChidubemAge) * 10);
+
+
+
+
+// challange  
+
+
+let Johnheight = 92
+let Johnweight = 1.95
+let MarksWeight = 78
+let Marksheight = 1.69
+
+let johnBMI = (Johnweight / Johnheight) ** 2;
+let MarkBMI = (MarksWeight / Marksheight) ** 2;
+console.log(johnBMI, MarkBMI);
+let CompareJohnMark = johnBMI > MarkBMI
+console.log(CompareJohnMark);
+
+// test 2
+let Johnheights = 85;
+let Johnweights = 1.76;
+let MarksWeights = 95;
+let Marksheights = 1.88;
+
+let johnBMIs = (Johnweights / Johnheights) ** 2;
+let MarkBMIs = (MarksWeights / Marksheights) ** 2;
+console.log(johnBMIs, MarkBMIs);
+let CompareJohnMarks = johnBMIs > MarkBMIs;
+console.log(CompareJohnMarks);
