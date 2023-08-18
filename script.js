@@ -253,7 +253,49 @@ let CompareJohnMarks = johnBMIs > MarkBMIs;
 console.log(CompareJohnMarks);
 
 
-// done
+// ********************************* Stings and Template Literals  ********************************
+const MyName = "John"
+const Myjob = "fullStack developer"
+const MyyearofBirth = 1999
+const currentYear = 2023
+const NewCharles = "I'm " + MyName + ", a " + (currentYear - MyyearofBirth) + " year old " + Myjob + " !"
+console.log(NewCharles);
+
+const charlesNew = ` I'm ${MyName}, a  ${currentYear - MyyearofBirth} yearold ${Myjob} !`  
+console.log(charlesNew);
 
 
+// ********************************  Taking Decisions: if eles statement  ********************************
+const JohnAge = 35;
+if ( JohnAge >= 18 ) {
+    console.log(
+      `john is eligible to drink Alchohol,🍺 because his age is ${JohnAge}`
+    );
+}  
+else {
+    const yearleft = 18 - JohnAge;
+    console.log(
+      `he is Not eligible to drink Alchohol,😢 Wait another ${yearleft} years`
+    );
+}
+
+let DayofTheWeek = 'Monday'
+if ( DayofTheWeek === 'Tuesday' ) {
+    console.log(` Sit At Home 🏠 `);
+}
+else {
+    console.log(`Write Some Code ⌨️`);
+}
+
+
+
+// codeing #challange
+
+if (MarkBMI > johnBMI) {
+    console.log(`Mark BMI ${MarkBMI} is higher than john's ${johnBMI}`);
+}
+
+else {
+    console.log(` John's BMI ${johnBMI} is higher than MarkBMI ${MarkBMI} `);
+}
 
