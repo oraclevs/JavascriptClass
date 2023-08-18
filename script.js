@@ -299,3 +299,29 @@ else {
     console.log(` John's BMI ${johnBMI} is higher than MarkBMI ${MarkBMI} `);
 }
 
+
+//**********************************  Type Convertion and Coersion  **************************
+// 1. Convert stings to Numbers  -> using the Number() Method
+const InputYear = '1991'
+console.log(Number(InputYear), InputYear);
+console.log(Number(InputYear) + 10);
+
+console.log(Number("Donald"));
+
+// 2. Convert Number to Stings -> using the Stings() Method
+console.log(String(23), 23);
+
+
+// *********************  Type Coersion  *******************
+// type coersion is when javascript changes a data type by itself 
+const sum = 35 + "hello"
+console.log(sum);
+console.log('23' - '10' - 3);
+console.log('24' / '2');
+
+let n = '1' + 1
+n = n - 1
+console.log(n);
+
+// next class we look at trusy and flausy values
+ 
