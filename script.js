@@ -388,7 +388,7 @@ if (_Barcelona >= 100 && _Barcelona > _Manchester) {
 
 
 //**********************************  The SWITCH  Statement   ************************** */
-const day = "suday";
+const day = "sunday";
 switch (day) {
     case " Monday":
         console.log( "set at home");
