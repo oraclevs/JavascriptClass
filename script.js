@@ -387,4 +387,32 @@ if (_Barcelona >= 100 && _Barcelona > _Manchester) {
 }
 
 
-//**********************************     ************************** */
+//**********************************  The SWITCH  Statement   ************************** */
+const day = "suday";
+switch (day) {
+    case " Monday":
+        console.log( "set at home");
+        break;
+    
+    case "Tuesday":
+        console.log("Attend class");
+        break;
+    
+    case "wednesday":
+        console.log("sleep ");
+    break;
+    case " thursday":
+    case "friday":
+        console.log("watch Movies");
+    break;
+    case "saturday":
+    case "sunday":
+        console.log("Thank God");
+    break;
+    default: 
+        console.log("dont do anything");
+    
+}
+// 1. assinment change the switch to if else statement
+// 2. study the Teneary operator
+// 3. solve the codind challange on his github
