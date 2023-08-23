@@ -246,9 +246,8 @@ const NewCharles =
   " !";
 console.log(NewCharles);
 
-const charlesNew = ` I'm ${MyName}, a  ${
-  currentYear - MyyearofBirth
-} yearold ${Myjob} !`;
+const charlesNew = ` I'm ${MyName}, a  ${currentYear - MyyearofBirth
+  } yearold ${Myjob} !`;
 console.log(charlesNew);
 
 // ********************************  Taking Decisions: if eles statement  ********************************
@@ -386,33 +385,59 @@ if (_Barcelona >= 100 && _Barcelona > _Manchester) {
   console.log("contact the me");
 }
 
-
 //**********************************  The SWITCH  Statement   ************************** */
-const day = "sunday";
+const day = "friday";
 switch (day) {
-    case " Monday":
-        console.log( "set at home");
-        break;
-    
-    case "Tuesday":
-        console.log("Attend class");
-        break;
-    
-    case "wednesday":
-        console.log("sleep ");
+  case " Monday":
+    console.log("set at home");
     break;
-    case " thursday":
-    case "friday":
-        console.log("watch Movies");
+
+  case "Tuesday":
+    console.log("Attend class");
     break;
-    case "saturday":
-    case "sunday":
-        console.log("Thank God");
+
+  case "wednesday":
+    console.log("sleep ");
     break;
-    default: 
-        console.log("dont do anything");
-    
+  case " thursday":
+  case "friday":
+    console.log("watch Movies");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Thank God");
+    break;
+  default:
+    console.log("dont do anything");
 }
 // 1. assinment change the switch to if else statement
 // 2. study the Teneary operator
 // 3. solve the codind challange on his github
+
+// 1.
+if (day === "monday") {
+  console.log("set at home");
+} else if (day === "tuesday") {
+  console.log("Attend class");
+} else if (day === "wednesday") {
+  console.log("sleep ");
+} else if (day === "friday") {
+  console.log("watch Movies");
+} else if (day === "sunday") {
+  console.log("Thank God");
+} else {
+  console.log("do whatever you want");
+}
+
+
+// 3.
+let tipone = 15 / 100
+let tiptwo = 20 / 100
+let Bill = 60
+let billTipone = Bill * tipone
+let billTiptwo = Bill * tiptwo
+let show;
+
+show = Bill >= 50 && Bill <= 300 ? ` The bill was ${Bill} and the tip is ${billTipone} so total bill is ${Bill+billTipone}` : ( Bill >= 301 ? `  The bill was ${Bill} and the tip is ${billTiptwo} so total bill is ${Bill+billTiptwo}`
+    : "you have no tip")
+ console.log(show);
