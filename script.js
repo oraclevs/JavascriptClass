@@ -450,7 +450,7 @@ show =
     : "you have no tip";
 console.log(show);
 
-// * LOOP for, whileloop, do while loop , foreach
+// ! LOOP for, whileloop, do while loop , foreach
 // for (intialization; condition; increment;decrement) {
 //   what should ne outpute
 // }
@@ -487,13 +487,13 @@ for (let a = 100; a <= 90; a--) {
   console.log(a--);
 }
 
-// * functions in javascript
-// type one
+// ! functions in javascript
+// ?type one
 function name() {
   console.log("hello");
 }
 name();
-// type two
+//? type two
 function name2() {
   return "hello";
 }
@@ -505,7 +505,45 @@ function Sum(num1, num2, num3, num4) {
 console.log(Sum(10, 5, 29, 49));
 
 function Display(email, Name, Course) {
-  return `Email  ${email} <br> Name:  ${Name} <br> Course  ${Course}`;
+  if (typeof email === "string" && typeof Name === "string" && typeof Course === "string") {
+    return `Email  ${email} <br> Name:  ${Name} <br> Course  ${Course}`;
+  } else {
+    return "only strings allowed";
+  }
 }
-console.log(Display( "oracle@gmail.com", "oracle", "fullStack"));
+
+console.log(Display("oracle@gmail.com", "oracle", "fullStack"));
 // document.write(Display( "oracle@gmail.com", "oracle", "fullStack"))
+
+
+
+function Sum1(NUM1, NUM2) {
+  if (typeof NUM1 === "number" && typeof NUM2 === "number") {
+    return NUM1 + NUM2;
+  } else {
+    return "only numbers allowed";
+  }
+  
+}
+console.log(Sum1(23, 5));
+
+
+// ! arrays  in javascript
+
+let NAmes = ["Nzube", "chekuwbe", "samuel", "victor", "Gift", "Charles", "jasper", "nwaeze", " Divine", "Culture", "Guy", "joy"]
+console.log(NAmes[6]);
+
+// ?  method of outputting all elements in an array
+// ? with for loop.
+
+
+for (let i = 0; i < NAmes.length; i++) {
+  console.log(NAmes[i]); 
+}
+
+// ? for of loop mostly used used for arrays.
+for (let name of NAmes) {
+  console.log(name); 
+}
+
+
