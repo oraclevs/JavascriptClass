@@ -487,8 +487,6 @@ for (let a = 100; a <= 90; a--) {
   console.log(a--);
 }
 
-
-
 // * functions in javascript
 // type one
 function name() {
@@ -496,8 +494,18 @@ function name() {
 }
 name();
 // type two
-function name2() { 
+function name2() {
   return "hello";
-
 }
 console.log(name2());
+
+function Sum(num1, num2, num3, num4) {
+  return num1 + num2 + num3 + num4;
+}
+console.log(Sum(10, 5, 29, 49));
+
+function Display(email, Name, Course) {
+  return `Email  ${email} <br> Name:  ${Name} <br> Course  ${Course}`;
+}
+console.log(Display( "oracle@gmail.com", "oracle", "fullStack"));
+// document.write(Display( "oracle@gmail.com", "oracle", "fullStack"))
