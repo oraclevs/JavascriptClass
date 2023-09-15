@@ -246,8 +246,9 @@ const NewCharles =
   " !";
 console.log(NewCharles);
 
-const charlesNew = ` I'm ${MyName}, a  ${currentYear - MyyearofBirth
-  } yearold ${Myjob} !`;
+const charlesNew = ` I'm ${MyName}, a  ${
+  currentYear - MyyearofBirth
+} yearold ${Myjob} !`;
 console.log(charlesNew);
 
 // ********************************  Taking Decisions: if eles statement  ********************************
@@ -429,15 +430,74 @@ if (day === "monday") {
   console.log("do whatever you want");
 }
 
-
 // 3.
-let tipone = 15 / 100
-let tiptwo = 20 / 100
-let Bill = 60
-let billTipone = Bill * tipone
-let billTiptwo = Bill * tiptwo
+let tipone = 15 / 100;
+let tiptwo = 20 / 100;
+let Bill = 275;
+let billTipone = Bill * tipone;
+let billTiptwo = Bill * tiptwo;
 let show;
 
-show = Bill >= 50 && Bill <= 300 ? ` The bill was ${Bill} and the tip is ${billTipone} so total bill is ${Bill+billTipone}` : ( Bill >= 301 ? `  The bill was ${Bill} and the tip is ${billTiptwo} so total bill is ${Bill+billTiptwo}`
-    : "you have no tip")
- console.log(show);
+show =
+  Bill >= 50 && Bill <= 300
+    ? ` The bill was ${Bill} and the tip is ${billTipone} so total bill is ${
+        Bill + billTipone
+      }`
+    : Bill >= 301
+    ? `  The bill was ${Bill} and the tip is ${billTiptwo} so total bill is ${
+        Bill + billTiptwo
+      }`
+    : "you have no tip";
+console.log(show);
+
+// * LOOP for, whileloop, do while loop , foreach
+// for (intialization; condition; increment;decrement) {
+//   what should ne outpute
+// }
+let Ab = 0;
+// * for loop
+for (let a = 0; a <= 10; a++) {
+  console.log(a++);
+}
+// for (let a = 100; a <=100; a--) {
+//   console.log(a);
+
+//  }
+//* do while loop
+// its does something while a certain condition is true
+// the condition is writen in the while bracket
+
+// do {
+//    conent
+// } while (condition)
+
+do {
+  console.log(Ab++);
+} while (Ab <= 10);
+
+// //* while loop
+// while (Ab <= 10) {
+//   console.log(Ab++);
+// }
+let AVB = 100;
+while (AVB <= 90) {
+  console.log(AVB--);
+}
+for (let a = 100; a <= 90; a--) {
+  console.log(a--);
+}
+
+
+
+// * functions in javascript
+// type one
+function name() {
+  console.log("hello");
+}
+name();
+// type two
+function name2() { 
+  return "hello";
+
+}
+console.log(name2());
