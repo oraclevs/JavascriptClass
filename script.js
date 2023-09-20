@@ -505,7 +505,11 @@ function Sum(num1, num2, num3, num4) {
 console.log(Sum(10, 5, 29, 49));
 
 function Display(email, Name, Course) {
-  if (typeof email === "string" && typeof Name === "string" && typeof Course === "string") {
+  if (
+    typeof email === "string" &&
+    typeof Name === "string" &&
+    typeof Course === "string"
+  ) {
     return `Email  ${email} <br> Name:  ${Name} <br> Course  ${Course}`;
   } else {
     return "only strings allowed";
@@ -515,35 +519,172 @@ function Display(email, Name, Course) {
 console.log(Display("oracle@gmail.com", "oracle", "fullStack"));
 // document.write(Display( "oracle@gmail.com", "oracle", "fullStack"))
 
-
-
 function Sum1(NUM1, NUM2) {
   if (typeof NUM1 === "number" && typeof NUM2 === "number") {
     return NUM1 + NUM2;
   } else {
     return "only numbers allowed";
   }
-  
 }
 console.log(Sum1(23, 5));
 
-
 // ! arrays  in javascript
 
-let NAmes = ["Nzube", "chekuwbe", "samuel", "victor", "Gift", "Charles", "jasper", "nwaeze", " Divine", "Culture", "Guy", "joy"]
+let NAmes = [
+  "Nzube",
+  "chekuwbe",
+  "samuel",
+  "victor",
+  "Gift",
+  "Charles",
+  "jasper",
+  "nwaeze",
+  " Divine",
+  "Culture",
+  "Guy",
+  "joy",
+];
 console.log(NAmes[6]);
 
+let Phpnames = ["mike ", "jube", "askmer"]
+let laravelname = ["onabve", "judei","james"]
+ let kodexName = NAmes.concat(Phpnames,laravelname)
 // ?  method of outputting all elements in an array
 // ? with for loop.
-
+for (let kod of kodexName) {
+  console.log(kod);
+}
 
 for (let i = 0; i < NAmes.length; i++) {
-  console.log(NAmes[i]); 
+  console.log(NAmes[i]);
 }
 
 // ? for of loop mostly used used for arrays.
 for (let name of NAmes) {
-  console.log(name); 
+  console.log(name);
 }
 
+// *  functions to multiply , Divide, subtract 2 numbers
+//* values that are not number should not be allow
+// * create and array of 5 items use for loop and for  of loop to loop through the array
+
+// 1 multiply
+
+function multiply(Va, Vb) {
+  if (typeof Va === "number" && typeof Vb === "number") {
+    return `product : ${Va * Vb}`;
+  } else {
+    return `only number are allowed`;
+  }
+}
+console.log(multiply(99, 5));
+// 2 divide
+function Divide(Da, Db) {
+  if (typeof Da === "number" && typeof Db === "number") {
+    return `product : ${Da / Db}`;
+  } else {
+    return `only number are allowed`;
+  }
+}
+console.log(Divide(59, 45));
+
+//  3 Subtract
+function Subtract(Ea, Eb) {
+  if (typeof Ea === "number" && typeof Eb === "number") {
+    return `product : ${Ea - Eb}`;
+  } else {
+    return `only number are allowed`;
+  }
+}
+console.log(Subtract(77, 55));
+
+// create an array of 5 itmes
+let food = ["rice", "beans", "plantain", "indomie", "rice and plantain"];
+// for loop
+for (let i = 0; i < food.length; i++) {
+  console.log(food[i]);
+}
+// for of loop
+for (a of food) {
+  console.log(a);
+}
+
+// done.
+//push is used to add to hte end of an array
+NAmes.push("ifeanyi");
+for (let name of NAmes) {
+  console.log(name);
+}
+
+//  to add an element to the array
+
+NAmes[17] = "imaginary";
+for (let name of NAmes) {
+  console.log(name);
+}
+
+NAmes[NAmes.length] = "Another imaginary ";
+for (let name of NAmes) {
+  console.log(name);
+}
+// pop is used to remove from the end of an array
+NAmes.pop();
+for (let name of NAmes) {
+  console.log(name);
+}
+
+// unshift  is used to add an item in front of the array
+NAmes.unshift("onana");
+for (let name of NAmes) {
+  console.log(name);
+}
+
+// shift is used to remove from the top of the array
+NAmes.shift("Nzube");
+for (let name of NAmes) {
+  console.log(name);
+}
+
+// sort is used to arrange the array in alphabetical order
+// NAmes.sort();
+// for (let name of NAmes) {
+//   console.log(name);
+// }
+// // reverse  dose the oposite of the sort
+// NAmes.reverse();
+// for (let name of NAmes) {
+//   console.log(name);
+// }
+
+// slplice  is used to add an item to a specific index in an array
+NAmes.splice(4, 0, "michello", "anjelo")
+for (let name of NAmes) {
+  console.log(name);
+}
+// class work
+/*  create two array with two item  use pop push shift unshift concatnate*/
+let arra1 = [" rice", "beans"]
+let ARR2 = ["Apple", "orange"]
+
+
+arra1.pop() // pop
+for (let arrx of arra1) { 
+  console.log(arrx);
+}
+arra1.push("plantain") // push
+for (let arrx of arra1) {
+  console.log(arrx);
+}
+arra1.shift("beans"); // shift
+for (let arrx of arra1) {
+  console.log(arrx);
+}
+arra1.unshift("yam"); // unshift
+for (let arrx of arra1) {
+  console.log(arrx);
+}
+let allara = arra1.concat(ARR2) // concat
+for (Arl of allara) {
+  console.log(Arl);
+}
 
