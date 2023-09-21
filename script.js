@@ -546,9 +546,9 @@ let NAmes = [
 ];
 console.log(NAmes[6]);
 
-let Phpnames = ["mike ", "jube", "askmer"]
-let laravelname = ["onabve", "judei","james"]
- let kodexName = NAmes.concat(Phpnames,laravelname)
+let Phpnames = ["mike ", "jube", "askmer"];
+let laravelname = ["onabve", "judei", "james"];
+let kodexName = NAmes.concat(Phpnames, laravelname);
 // ?  method of outputting all elements in an array
 // ? with for loop.
 for (let kod of kodexName) {
@@ -657,21 +657,20 @@ for (let name of NAmes) {
 // }
 
 // slplice  is used to add an item to a specific index in an array
-NAmes.splice(4, 0, "michello", "anjelo")
+NAmes.splice(4, 0, "michello", "anjelo");
 for (let name of NAmes) {
   console.log(name);
 }
 // class work
 /*  create two array with two item  use pop push shift unshift concatnate*/
-let arra1 = [" rice", "beans"]
-let ARR2 = ["Apple", "orange"]
+let arra1 = [" rice", "beans"];
+let ARR2 = ["Apple", "orange"];
 
-
-arra1.pop() // pop
-for (let arrx of arra1) { 
+arra1.pop(); // pop
+for (let arrx of arra1) {
   console.log(arrx);
 }
-arra1.push("plantain") // push
+arra1.push("plantain"); // push
 for (let arrx of arra1) {
   console.log(arrx);
 }
@@ -683,8 +682,70 @@ arra1.unshift("yam"); // unshift
 for (let arrx of arra1) {
   console.log(arrx);
 }
-let allara = arra1.concat(ARR2) // concat
+let allara = arra1.concat(ARR2); // concat
 for (Arl of allara) {
   console.log(Arl);
 }
+
+// ! objects in javascript
+// let objects = {
+//   key: "value",
+//   key: "value"
+// }
+let PerSon = {
+  name: "gift",
+  age: 30,
+  height: "5.5ft",
+  color: "caramel",
+};
+// ? looping through objects
+for (let property in  PerSon) {
+  console.log(property + ":: " + PerSon[property]);
+}
+let CAR = new Object();
+CAR.name = "Benz";
+CAR.model = "peugeout";
+
+console.log("Name: " + PerSon.name + " " + "Age: " + PerSon["age"]);
+
+// ?  creating  a function inside an object
+let calculator = {
+  add: function (numa1, numb2) {
+    return ` sum : ${numa1 + numb2}`;
+  },
+  subtract: function (num1x, num2x) {
+    return ` diffrence : ${num1x - num2x}`;
+  },
+};
+calculator.multiply = function (num1, num2) {
+  return ` product : ${num1 * num2}`;
+};
+// ? if you want to delect from a property from an object use delect function
+delete calculator.multiply;
+console.log(calculator.add(4, 10));
+console.log(calculator.subtract(35, 10));
+// console.log(calculator.multiply(20, 6));
+
+//  class work 
+let dog = {
+  dogname: "bingo",
+  Age: "3",
+  ownername:"John"
+}
+let Bank = {
+  accountcreation: function (name, age, amount,) {
+    return  `  account created : Name: ${name} , age: ${age} , Amount: $ ${amount}.`;
+  },
+  deposit: function ( name, amount){
+    return `name: ${name} , amount: $ ${amount}`
+  }
+  
+}
+console.log(dog);
+console.log(Bank.deposit("oraclex",4000));
+console.log(Bank.accountcreation('oracle ', 20, 300, 30));
+
+;
+
+
 
